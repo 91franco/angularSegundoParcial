@@ -34,7 +34,9 @@ MongoClient.connect('mongodb://localhost:27017/clase13', function(err, db) {
 	})
 
 	app.use(function (req, res, next) {
-	  console.log('Time:', Date.now());
+	 	var time = Date();
+		
+	  console.log('Time:',time);
 	  next();
 	});
 
